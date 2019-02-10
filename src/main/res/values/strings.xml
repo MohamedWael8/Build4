@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Osfora</string>
+    <string name="search_placeholder">Enter name of tweeter…</string>
+    <string name="try_again">Try Again</string>
+    <string name="empty_results_text">No tweeters found with the name</string>
+    <string name="offline_error">Couldn\'t connect to the internet. Please, connect and try again.</string>
+    <string name="server_error">We encountered server error. Please, try again later.</string>
+    <string name="timeout_error">It tooks so long to connect to the internet. You can try again.</string>
+    <string name="followers">followers</string>
+</resources>

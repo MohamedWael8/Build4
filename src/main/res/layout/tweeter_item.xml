@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+
+    <ImageView
+            android:id="@+id/profilePictureImageView"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="16dp"
+            android:layout_centerVertical="true"
+            tools:src="@drawable/ic_error"/>
+
+    <ImageView
+            android:id="@+id/isVerifiedImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="-8dp"
+            android:layout_alignTop="@+id/profilePictureImageView"
+            android:layout_alignEnd="@+id/profilePictureImageView"
+            android:src="@drawable/ic_verified_medium"
+            android:visibility="gone"/>
+
+    <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/profilePictureImageView"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/primary_text_light"
+            android:textStyle="bold"
+            android:maxLines="1"
+            tools:text="Tim Cook Tim CookTim CookTim CookTim CookTim CookTim Cook"/>
+
+    <TextView
+            android:id="@+id/screenNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/nameTextView"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="16dp"
+            android:layout_below="@id/nameTextView"
+            android:textSize="16sp"
+            android:textColor="@android:color/tertiary_text_light"
+            android:maxLines="1"
+            tools:text="\@T_Cook"/>
+
+    <TextView
+            android:id="@+id/numberOfFollowersTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/nameTextView"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@id/screenNameTextView"
+            android:textSize="16sp"
+            android:textColor="@android:color/primary_text_light"
+            android:maxLines="1"
+            tools:text="2345 followers"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+</RelativeLayout>
